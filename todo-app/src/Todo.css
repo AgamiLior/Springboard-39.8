@@ -1,0 +1,69 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Todo {
+    width: 60%;
+    min-height: 10px;
+    padding: 5px;
+    background-color: lightyellow;
+    margin: 5px;
+    animation: fadeIn 2s;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.Todo-todo {
+    font-size: 1.3em;
+    top: 50px;
+    margin: 5px;
+}
+
+.Todo-todo-completed {
+    text-decoration: line-through;
+}
+
+.Todo-control {
+    width: 100%;
+    text-align: right;
+}
+
+.Todo-btn-complete:hover {
+    cursor: pointer;
+}
+.Todo-btn-edit:hover {
+    cursor: pointer;
+}
+.Todo-btn-delete:hover {
+    cursor: pointer;
+}
+.Todo-btn-edit {
+    color: blue;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.Todo-btn-complete {
+    margin: 0 5px;
+    color: green;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.Todo-btn-delete {
+    color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+@media (max-width:768px) {
+    .Todo {
+        width: 100%;
+    }
+}
